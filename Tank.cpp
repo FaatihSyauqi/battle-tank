@@ -1567,6 +1567,7 @@ void PAUSE(int *loop){
 }
 void GAMEOVER(){
 
+    PlaySound(TEXT("asset/Sound/gameover.wav"), NULL, SND_ASYNC);
     readimagefile("asset/Image/GAME OVER.bmp", 100, 100, 700, 300);
     //BUTTON
     readimagefile("asset/Image/Button/CHOOSEREPLAY.bmp", 330, 300, 390, 330);
@@ -1710,47 +1711,111 @@ void SORTSCORE(){/*MASIH GAGAL...*/
 void INTRO(){
     int KEY;
 
-    delay(1000);//1detik
-    readimagefile("asset/Image/Intro/Agit.bmp", 0, 0, 800, 600); //kiri, atas, kanan,bawah
-    PlaySound(TEXT("asset/Sound/beep.wav"), NULL, SND_ASYNC); //efek suara agit
-    delay(500);//0,5detik
-    cleardevice();//mengahpus tampilan Agit
-    delay(500);//0,5detik
+    readimagefile("asset/image/Logo/awal.bmp", 0, 0, 800, 600); //kiri, atas, kanan,bawah
+    delay(1000);//0,02detik
+    //loading();
+    readimagefile("asset/image/Logo/awal2.bmp", 0, 0, 800, 600); //kiri, atas, kanan,bawah
+    delay(20); //0,02detik
+    readimagefile("asset/image/Logo/awal3.bmp", 0, 0, 800, 600); //kiri, atas, kanan,bawah
+    delay(20); //0,02detik
+    readimagefile("asset/image/Logo/awal4.bmp", 0, 0, 800, 600); //kiri, atas, kanan,bawah
+    delay(20); //0,02detik
+    readimagefile("asset/image/Logo/awal5.bmp", 0, 0, 800, 600); //kiri, atas, kanan,bawah
+    delay(20); //0,02detik
+    readimagefile("asset/image/Logo/awal6.bmp", 0, 0, 800, 600); //kiri, atas, kanan,bawah
+    delay(20); //0,02detik
+    readimagefile("asset/image/Logo/awal7.bmp", 0, 0, 800, 600); //kiri, atas, kanan,bawah
+    delay(20); //0,02detik
+    readimagefile("asset/image/Logo/awal8.bmp", 0, 0, 800, 600); //kiri, atas, kanan,bawah
+    delay(20); //0,02detik
+    readimagefile("asset/image/Logo/awal9.bmp", 0, 0, 800, 600); //kiri, atas, kanan,bawah
+    delay(20); //0,02detik
+    readimagefile("asset/image/Logo/awal10.bmp", 0, 0, 800, 600); //kiri, atas, kanan,bawah
+    delay(20); //0,02detik
+    readimagefile("asset/image/Logo/awal11.bmp", 0, 0, 800, 600); //kiri, atas, kanan,bawah
+    delay(20); //0,02detik
+    readimagefile("asset/image/Logo/awal12.bmp", 0, 0, 800, 600); //kiri, atas, kanan,bawah
+    delay(20); //0,02detik
+    readimagefile("asset/image/Logo/awal13.bmp", 0, 0, 800, 600); //kiri, atas, kanan,bawah
+    delay(20); //0,02detik
+    readimagefile("asset/image/Logo/awal14.bmp", 0, 0, 800, 600); //kiri, atas, kanan,bawah
+    delay(20); //0,02detik
+    readimagefile("asset/image/Logo/awal15.bmp", 0, 0, 800, 600); //kiri, atas, kanan,bawah
+    delay(20); //0,02detik
+    readimagefile("asset/image/Logo/awal16.bmp", 0, 0, 800, 600); //kiri, atas, kanan,bawah
+    delay(20); //0,02detik
+    readimagefile("asset/image/Logo/awal17.bmp", 0, 0, 800, 600); //kiri, atas, kanan,bawah
+    delay(20); //0,02detik
+    readimagefile("asset/image/Logo/awal18.bmp", 0, 0, 800, 600); //kiri, atas, kanan,bawah
+    delay(20); //0,02detik
+    readimagefile("asset/image/Logo/awal19.bmp", 0, 0, 800, 600); //kiri, atas, kanan,bawah
+    delay(20); //0,02detik
+    readimagefile("asset/image/Logo/awal20.bmp", 0, 0, 800, 600); //kiri, atas, kanan,bawah
+    delay(20); //0,02detik
+    readimagefile("asset/image/Logo/awal21.bmp", 0, 0, 800, 600); //kiri, atas, kanan,bawah
+    delay(20); //0,02detik
+    readimagefile("asset/image/Logo/awal22.bmp", 0, 0, 800, 600); //kiri, atas, kanan,bawah
+    delay(20); //0,02detik
+    readimagefile("asset/image/Logo/awal23.bmp", 0, 0, 800, 600); //kiri, atas, kanan,bawah
+    delay(20); //0,02detik
+    readimagefile("asset/image/Logo/awal24.bmp", 0, 0, 800, 600); //kiri, atas, kanan,bawah
+    delay(20); //0,02detik
+    readimagefile("asset/image/Logo/awal25.bmp", 0, 0, 800, 600); //kiri, atas, kanan,bawah
+    delay(20); //0,02detik
+    readimagefile("asset/image/Logo/awal26.bmp", 0, 0, 800, 600); //kiri, atas, kanan,bawah
+    delay(20); //0,02detik
+    readimagefile("asset/image/Logo/awal27.bmp", 0, 0, 800, 600); //kiri, atas, kanan,bawah
+    delay(20); //0,02detik
+    readimagefile("asset/image/Logo/awal28.bmp", 0, 0, 800, 600); //kiri, atas, kanan,bawah
+    delay(20); //0,02detik
+    readimagefile("asset/image/Logo/awal29.bmp", 0, 0, 800, 600); //kiri, atas, kanan,bawah
+    delay(20); //0,02detik
+    readimagefile("asset/image/Logo/awal30.bmp", 0, 0, 800, 600); //kiri, atas, kanan,bawah
+    delay(20); //0,02detik
+    readimagefile("asset/image/Logo/awal31.bmp", 0, 0, 800, 600); //kiri, atas, kanan,bawah
+    delay(20); //0,02detik
+    readimagefile("asset/image/Logo/awal32.bmp", 0, 0, 800, 600); //kiri, atas, kanan,bawah
+    delay(20); //0,02detik
+    readimagefile("asset/image/Logo/awal33.bmp", 0, 0, 800, 600); //kiri, atas, kanan,bawah
+    delay(20); //0,02detik
+    readimagefile("asset/image/Logo/awal34.bmp", 0, 0, 800, 600); //kiri, atas, kanan,bawah
+    delay(20); //0,02detik
+    readimagefile("asset/image/Logo/awal35.bmp", 0, 0, 800, 600); //kiri, atas, kanan,bawah
+    delay(20); //0,02detik
+    readimagefile("asset/image/Logo/awal36.bmp", 0, 0, 800, 600); //kiri, atas, kanan,bawah
+    delay(20); //0,02detik
+    readimagefile("asset/image/Logo/awal37.bmp", 0, 0, 800, 600); //kiri, atas, kanan,bawah
+    delay(20); //0,02detik
+    readimagefile("asset/image/Logo/awal38.bmp", 0, 0, 800, 600); //kiri, atas, kanan,bawah
+    delay(20); //0,02detik
+    readimagefile("asset/image/Logo/awal39.bmp", 0, 0, 800, 600); //kiri, atas, kanan,bawah
+    delay(20); //0,02detik
+    readimagefile("asset/image/Logo/awal40.bmp", 0, 0, 800, 600); //kiri, atas, kanan,bawah
+    delay(20); //0,02detik
+    readimagefile("asset/image/Logo/awal41.bmp", 0, 0, 800, 600); //kiri, atas, kanan,bawah
+    delay(20); //0,02detik
+    readimagefile("asset/image/Logo/awal42.bmp", 0, 0, 800, 600); //kiri, atas, kanan,bawah
+    delay(20); //0,02detik
+    readimagefile("asset/image/Logo/awal43.bmp", 0, 0, 800, 600); //kiri, atas, kanan,bawah
+    delay(20); //0,02detik
+    readimagefile("asset/image/Logo/awal44.bmp", 0, 0, 800, 600); //kiri, atas, kanan,bawah
+    delay(20); //0,02detik
+    readimagefile("asset/image/Logo/awal45.bmp", 0, 0, 800, 600); //kiri, atas, kanan,bawah
+    delay(20); //0,02detik
+    readimagefile("asset/image/Logo/awal46.bmp", 0, 0, 800, 600); //kiri, atas, kanan,bawah
+    delay(20); //0,02detik
+    readimagefile("asset/image/Logo/awal47.bmp", 0, 0, 800, 600); //kiri, atas, kanan,bawah
+    delay(20); //0,02detik
+    readimagefile("asset/image/Logo/awal48.bmp", 0, 0, 800, 600); //kiri, atas, kanan,bawah
+    delay(20); //0,02detik
+    readimagefile("asset/image/Logo/awal49.bmp", 0, 0, 800, 600); //kiri, atas, kanan,bawah
+    delay(20); //0,02detik
+    readimagefile("asset/image/Logo/awal50.bmp", 0, 0, 800, 600); //kiri, atas, kanan,bawah
+    delay(20); //0,02detik
+    readimagefile("asset/image/Logo/awal51.bmp", 0, 0, 800, 600); //kiri, atas, kanan,bawah
+    PlaySound(TEXT("asset/Sound/Menu Utama.wav"), NULL, SND_ASYNC|| SND_LOOP); //efek suaras
 
-    readimagefile("asset/Image/Intro/Kartika.bmp", 0, 0, 800, 600); //kiri, atas, kanan,bawah
-    PlaySound(TEXT("asset/Sound/beep.wav"), NULL, SND_ASYNC); //efek suara Kartika
-    delay(500);//0,5detik
-    cleardevice();//mengahpus tampilan Kartika
-    delay(500);//0,5detik
-
-    readimagefile("asset/Image/Intro/Mughie.bmp", 0, 0, 800, 600); //kiri, atas, kanan,bawah
-    PlaySound(TEXT("asset/Sound/beep.wav"), NULL, SND_ASYNC); //efek suara Mughie
-    delay(500);//0,5detik
-    cleardevice();//mengahpus tampilan Mughie
-    delay(500);//0,5detik
-
-    readimagefile("asset/Image/Intro/Faatih.bmp", 0, 0, 800, 600); //kiri, atas, kanan,bawah
-    PlaySound(TEXT("asset/Sound/beep.wav"), NULL, SND_ASYNC); //efek suara Faatih
-    delay(500);//0,5detik
-    cleardevice();//mengahpus tampilan Faatih
-    delay(500);//0,5detik
-
-    readimagefile("asset/Image/Intro/Novilawati.bmp", 0, 0, 800, 600); //kiri, atas, kanan,bawah
-    PlaySound(TEXT("asset/Sound/beep.wav"), NULL, SND_ASYNC); //efek suara Novi
-    delay(500);//0,5detik
-    cleardevice();//mengahpus tampilan Novi
-    delay(500);//0,5detik
-
-    PlaySound(TEXT("asset/Sound/error.wav"), NULL, SND_ASYNC); //efek suara Novi
-    delay(500);//0,5detik
-
-    PlaySound(TEXT("asset/Sound/menu.wav"), NULL, SND_ASYNC); //efek suara
-    delay (500);//0,5detik
-    readimagefile("asset/Image/LOGO1.bmp", 0, 0, 800, 600); //kiri, atas, kanan,bawah
-    delay (2000);//2detik
-    //settextstyle(2, 0, 2);//font, posisi size
     outtextxy(295,500,"( PRESS ENTER TO CONTINUE )"); //x,y,karakterstring
-
     while(true)
     {
         if (kbhit())
@@ -1758,7 +1823,7 @@ void INTRO(){
             KEY = getch(); //input
             if (KEY == ENTER)
             {
-                PlaySound(TEXT("asset/Sound/select.wav"), NULL, SND_ASYNC); //efek suara Novi
+                PlaySound(TEXT("asset/Sound/select.wav"), NULL, SND_ASYNC); //efek suara
                 fflush(stdin); //agar tidak terjadi penuhnya input buffer
                 cleardevice(); //menghapus
                 OPEN();
